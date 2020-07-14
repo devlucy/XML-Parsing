@@ -26,25 +26,10 @@ namespace FootBall
         }
         public void PopulateDatatableColumnForSpy(DataTable dataTable)
         {
-            try
-            {
-                dataTable.Columns.Add("name");
-                dataTable.Columns.Add("type");
-                dataTable.Columns.Add("x");
-                dataTable.Columns.Add("y");
-                //   dataTable.Columns.Add("CentreX");
-                //   dataTable.Columns.Add("CentreY");
-                dataTable.Columns.Add("height");
-                dataTable.Columns.Add("width");
-                //   dataTable.Columns.Add("ID");
-                dataTable.Columns.Add("visible");
-                dataTable.Columns.Add("enabled");
-                dataTable.Columns.Add("label");
-
-            }
-            catch (Exception ex)
-            {
-
+               foreach (var attrubute in attributeNames)
+              {
+                 dataTable.Columns.Add(attrubute);
+              }
             }
         }
         /// <summary>
@@ -82,10 +67,7 @@ namespace FootBall
             {
                 try
                 {
-                   // if (n.Attributes[item].Value != null)
-                   // {
                         dr[item] = n.Attributes[item].Value;
-                   // }
                 }
                 catch (Exception ex)
                 {
