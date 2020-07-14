@@ -11,6 +11,11 @@ namespace FootBall
         public DataTable dataTable = new DataTable();
         private string[] attributeNames = { "type", "name", "label", "enabled", "visible", "x", "y", "width", "height" };
         private bool flag;
+    
+        public XmlParser(){
+            PopulateDatatableColumnForSpy(dataTable);
+            }
+    
         /// <summary>
         /// XMLContent takes input as a xml data and converts it into xmlnodes
         /// PopulateDatatableColumnForSpy creates columns in datatable
@@ -21,7 +26,6 @@ namespace FootBall
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(XMLContent);
             XmlNode allXmlNodes = doc.DocumentElement;
-            PopulateDatatableColumnForSpy(dataTable);
             return allXmlNodes;
         }
         public void PopulateDatatableColumnForSpy(DataTable dataTable)
