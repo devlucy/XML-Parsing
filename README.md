@@ -4,7 +4,8 @@ XML Parser converts xml data to object.
 static array used in class is for attributes 
 
 
-```XmlParser parser = new XmlParser();
+```
+XmlParser parser = new XmlParser();
 parser.RecursiveData(parser.ConvertXmlDataToNode(File.ReadAllText(@"D:\domsss.xml")));
 var dataTable1 = parser.dataTable;
 ```
