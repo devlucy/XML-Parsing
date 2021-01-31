@@ -1,7 +1,7 @@
 # XML-Parsing
 
 XML Parser converts xml data to object.
-static array used in class is for attributes 
+static array used in class is for attributes of xml file. 
 
 
 ```
