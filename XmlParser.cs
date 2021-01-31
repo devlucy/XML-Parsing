@@ -75,6 +75,7 @@ namespace FootBall
                 }
                 catch (Exception ex)
                 {
+                Console.WriteLine(ex.message);
                 }
             }
             dataTable.Rows.Add(dr);
