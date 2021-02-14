@@ -71,7 +71,7 @@ namespace FootBall
             {
                 try
                 {
-                        dr[item] = n.Attributes[item].Value;
+                dr[item] = n.Attributes[item].Value;
                 }
                 catch (Exception ex)
                 {
